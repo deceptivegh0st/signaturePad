@@ -1,0 +1,41 @@
+:root{
+    --primary-color: #212121;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.4;
+    padding: 1rem;
+    background-color: bisque;
+}
+
+.signaturePadForm{
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.signaturePad{
+    cursor: url(pen.png) 1 26, pointer;
+    border: 2px solid var(--primary-color);
+    border-radius: 4px;
+}
+
+.clearButton{
+    color: var(--primary-color);
+}
+
+.submitButton{
+    width: 100%;
+    background-color: var(--primary-color);
+    border: none;
+    padding: 0.5rem 1rem;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 2rem;
+}
+
+@media (pointer: coarse){
+    body{
+        overflow: hidden; /* Needed to prevent the vertical scrolling */
+    }
+}
